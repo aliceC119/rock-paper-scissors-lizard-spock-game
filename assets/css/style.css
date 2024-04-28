@@ -32,7 +32,7 @@ body {
 }
 
 img.logo{
-    max-width: 40%;
+    max-width: 20%;
     max-height: 20%;
     padding-right: 5px;
     display: relative;
@@ -82,6 +82,21 @@ img.spock{
     height: 20%;
 }
 
+#playerDisplay, #computerDisplay{
+    font-size: 3rem;
+    color:rgb(135, 133, 237);
+    margin: 20px 0;
+    align-items: center;
+}
+#resultDisplay {
+    font-size: 3rem;
+    color: red;
+    margin: 20px 0;
+}
+/* Footer */
+
 footer h2 {
     color: gray;
+    display: relative;
+    text-align: center;
 }

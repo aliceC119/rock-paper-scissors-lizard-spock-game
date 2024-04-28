@@ -17,7 +17,7 @@
 
 <body>
     <h1 class="heading">
-        <img class="logo" src="assets/images/RPSLS__MConverter.eu_-removebg-preview.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock Game
+        <img class="logo" src="assets/images/headerlogo.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock Game
     </h1>
 
     <div class="container">
@@ -47,18 +47,20 @@
             <button onclick="playGame('rock')"><img class="rock" src="assets/images/rock.png" alt="rock"></button>
             <button onclick="playGame('paper')"><img class="paper" src="assets/images/paper.png" alt="paper"></button>
             <button onclick="playGame('scissors')"><img class="scissors" src="assets/images/scissors.png" alt="scissors"></button>
-            <button onclick="playGmae('lizard')"><img class="lizard" src="assets/images/lizard.png" alt="lizard"></button>
+            <button onclick="playGame('lizard')"><img class="lizard" src="assets/images/lizard.png" alt="lizard"></button>
             <button onclick="playGame('spock')"><img class="spock" src="assets/images/spock.png" alt="spock"></button>
-    </div>
-
-        <div class="score-area">
-            <p class="scores">Win <span id="Win">0</span></p>
-            <p class="scores">Lost <span id="Lost">0</span></p>
-            <p class="scores">Tied <span id="Tied">0</span></p>
-
+   
         </div>
+    <!-- Design score area -->
+
+         <div class="score-area">
+            <div id="playerDisplay">PLAYER:</div>
+            <div id="computerDisplay">Computer:</div>
+            <div id="resultDisplay"></div>
+        </div>   
+       
     
-    </div>
+   
        
 <!-- Footer -->
 
