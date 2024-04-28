@@ -8,12 +8,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/vecteezy_victory-hand-icon-emoji-sticker_28556811.png">
+    
     <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
 </head>
+
 <body>
     <h1 class="heading">
         <img class="logo" src="assets/images/RPSLS__MConverter.eu_-removebg-preview.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock Game
@@ -28,7 +29,7 @@
         </div>
     </div>
 
-        <div class="box-2">
+    <div class="box-2">
 
         <img id="computer-choice" src="assets/images/paper.png" alt="Computer choice">
         <div class="text-box">
@@ -38,20 +39,17 @@
     
     </div>
 
-
-    <div class="choices">
-        <button onclick="playGame('rock')"><img class="rock" src="assets/images/rock.png" alt="rock"></button>
-        <button onclick="playGame('paper')"><img class="paper" src="assets/images/paper.png" alt="paper"></button>
-        <button onclick="playGame('scissors')"><img class="scissors" src="assets/images/scissors.png" alt="scissors"></button>
-        <button onclick="playGmae('lizard')"><img class="lizard" src="assets/images/lizard.png" alt="lizard"></button>
-        <button onclick="playGame('spock')"><img class="spock" src="assets/images/spock.png" alt="spock"></button>
-    </div>
-    <!-- Design game area -->
+     <!-- Design game area -->
 
     <div class="game-area">
-        
 
-        </div>
+        <div class="choices">
+            <button onclick="playGame('rock')"><img class="rock" src="assets/images/rock.png" alt="rock"></button>
+            <button onclick="playGame('paper')"><img class="paper" src="assets/images/paper.png" alt="paper"></button>
+            <button onclick="playGame('scissors')"><img class="scissors" src="assets/images/scissors.png" alt="scissors"></button>
+            <button onclick="playGmae('lizard')"><img class="lizard" src="assets/images/lizard.png" alt="lizard"></button>
+            <button onclick="playGame('spock')"><img class="spock" src="assets/images/spock.png" alt="spock"></button>
+    </div>
 
         <div class="score-area">
             <p class="scores">Win <span id="Win">0</span></p>
@@ -59,9 +57,14 @@
             <p class="scores">Tied <span id="Tied">0</span></p>
 
         </div>
+    
     </div>
        
+<!-- Footer -->
 
+<footer>
+    <h2>2024 | All Rights reserved</h2>
+</footer>
     
     
     <script src="assets/js/script.js"></script>
