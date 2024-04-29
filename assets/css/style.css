@@ -1,15 +1,15 @@
 body {
-    background:  #fff9ac;
+    background:  rgb(249, 236, 236);
     font-family: 'Jersey 15', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 #player-choice{
     max-width: 100%;
     max-height: 100%; 
-   
     padding: 5px;
     
 }
@@ -22,7 +22,8 @@ body {
 }
 .container {
     display: flex;
-    column-gap: 80px;
+    column-gap: 100px;
+    margin-top: 5px;
     
 }
 
@@ -37,14 +38,18 @@ img.logo{
     max-height: 20%;
     padding-right: 5px;
     display: relative;
+    float: left;
+   
 }
 .heading{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: gray;
     position: flex;
-    height: 80%;
+    height: 50%;
     text-align: center;
     display: relative;
+    margin-bottom: 30px;
+    
 }
 .movesleft, .move {
     font-family: "Jersey 15", sans-serif;
@@ -63,7 +68,7 @@ img.logo{
     font-size :1rem;
     margin: 0 30px;
     border-radius: 100px;
-    background-color: antiquewhite;
+    background-color: #fff6d5;
     transition: background-color 0.5s ease;
     display: relative;
 }
@@ -106,16 +111,15 @@ img.spock{
 #playerScore, #computerScore {
     font-size: 3rem;
     color:green;
-    margin: 20px 0;
-    text-align: center;
+    margin: 20px 0;  
 
 }
 
- 
 /* Footer */
 
 footer h2 {
     color: gray;
     display: relative;
     text-align: center;
+  
 }
