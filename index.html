@@ -42,7 +42,12 @@
      <!-- Design game area -->
 
     <div class="game-area">
-
+        
+    <!-- Numbers of attempt before game ends -->
+        <div class="movesleft">Moves Left: 10</div>
+        <div class="move">Choose your move</div>
+        
+        <!-- Choices for player to play the game -->
         <div class="choices">
             <button onclick="playGame('rock')"><img class="rock" src="assets/images/rock.png" alt="rock"></button>
             <button onclick="playGame('paper')"><img class="paper" src="assets/images/paper.png" alt="paper"></button>
@@ -55,9 +60,14 @@
 
          <div class="score-area">
             <div id="playerDisplay">PLAYER:</div>
+            <div id="playerScore">Score:</div>
             <div id="computerDisplay">Computer:</div>
+            <div id="computerScore">Score:</div>
             <div id="resultDisplay"></div>
-        </div>   
+         
+        <div class="result">Scores</div>
+        <button class="reload">Reload</button>
+    </div>  
        
     
    
