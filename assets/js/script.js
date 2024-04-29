@@ -1,16 +1,25 @@
-
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
+const playerScoreDisplay = document.getElementById("playerScore");
+const computerScoreDisplay = document.getElementById("computerScore");
+const movesLeft = document.querySelector('.movesleft');
+const imagePath = "assets/images/";
+const numOfTurn = 10;
 
-let player = 0;
-let computer = 0;
-let numOfRound = 0;
+let playerScore = 0;
+let computerScore = 0;
+let moves = 10;
+let meetEndGameCondition = false;
 
 
-function playTurn(playerChoice) {
-    const computerChoice = choices[Math.floor(Math.random()* 5)];
+/**
+ * Set up the game logic */
+
+function playTurn(playerChoice, computerChoice) {
+    
+    
     let resultInt = 0;
 
     if(playerChoice === computerChoice){
@@ -43,75 +52,63 @@ function playTurn(playerChoice) {
 
 function playGame(playerChoice){
 
-   
-    
-    let result = "";
-
-
-    if(playerChoice === computerChoice){
-        result = "It's a DRAW!"
-        
-    }
-    else{
-        switch(playerChoice){
-            case "scissors":
-                result = (computerChoice === "paper") ? "You Win" : "You Lose!";
-                break;
-            case "paper":
-                result = (computerChoice === "rock") ? "You Win!" : "You Lose!";
-                break; 
-            case "rock":
-                result = (computerChoice === "lizard") ? "You Win!" : "You Lose!";
-                break;     
-            case "lizard":
-                result = (computerChoice === "spock") ? "You Win!" : "You Lose!";
-                break; 
-            case "spock":
-                result = (computerChoice === "scissors") ? "You Win!" : "You Lose!";
-                break;  
-            case "scissors":
-                result = (computerChoice === "lizard") ? "You Win!" : "You Lose!";
-                break; 
-            case "lizard":
-                result = (computerChoice === "paper") ? "You Win!" : "You Lose!";
-                break; 
-            case "paper":
-                result = (computerChoice === "spock") ? "You Win!" : "You Lose!";
-                break;   
-            case "spock":
-                result = (computerChoice === "rock") ? "You Win!" : "You Lose!";
-                break;
-            case "rock":
-                result = (computerChoice === "scissors") ? "You Win!" : "You Lose!";
-                break;           
-        }
-    
-
-
+    let computerChoice = choices[Math.floor(Math.random()* 5)];
+    document.getElementById("computer-choice").src = imagePath + computerChoice + ".png";
+    document.getElementById("player-choice").src = imagePath + playerChoice + ".png";
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
+
+    let resultInt = playTurn(playerChoice, computerChoice);
+  
+    let result = "";
+
+    if (resultInt > 0) {
+        result = "You Win!";
+        playerScore++;
+    } else if (resultInt < 0) {
+        result = "You Lose!";
+        computerScore++;
+    } else {
+        result = "It's a Draw!"
+    }
+    playerScoreDisplay.textContent = "Score: " + playerScore.toString();
+    computerScoreDisplay.textContent = "Score: " + computerScore.toString();
     resultDisplay.textContent = result;
 
-    playerOptions.forEach(option => {
-        option.addEventListener('click',function(){
+    moves++;
+    movesLeft.innerText = `Moves Left: ${numOfTurn - moves}`;
 
-            const movesLeft = document.querySelector('.movesleft');
-            moves++;
-            movesLeft.innerText = `Moves Left: ${10-moves}`;
-            
+    if(moves >= numOfTurn || meetEndGameCondition){
+        endGame();
+    }
 
-            const choiceNumber = Math.floor(Math.random()*3);
-            const computerChoice = computerOptions[choiceNumber];
+    function endGame() {
+        let winner = "It's a Tie Game";
+        if (playerScore > computerScore) {
+            winner = "The winner is" + "You"; 
+        } else if (computerScore > playerScore) {
+            winner = "The winner is " + "Computer";
+        }
+        resultDisplay.textContent = winner;
 
-            // Function to check who wins
-            winner(this.innerText,computerChoice)
-            
-            // Calling gameOver function after 10 moves
-            if(moves == 10){
-                gameOver(playerOptions,movesLeft);
-            }
-        })
-    })
-    
+        document.querySelector('.choice').style.display = 'none';
+        document.querySelector('.move').style.display = 'none';
+    }
+    function clearDisplay() {
+        playerScore = 0;
+        computerScore = 0;
+        moves = 0;
+
+        movesLeft.innerText = `Moves Left: ${10-moves}`;
+        playerScoreDisplay.textContent = "Score: " + playerScore.toString();
+        computerScoreDisplay.textContent = "Score: " + computerScore.toString();
+        resultDisplay.textContent = "";
+
+        document.querySelector('.choices').style.display = 'block';
+        document.querySelector('.move').style.display = 'block;'
+    }
+
 }
-}
+
+
+ 

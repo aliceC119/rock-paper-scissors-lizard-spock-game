@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/vecteezy_victory-hand-icon-emoji-sticker_28556811.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/logo.jpg">
     
     <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
 </head>
 
-<body>
+<body onload="clearDisplay()">
     <h1 class="heading">
         <img class="logo" src="assets/images/headerlogo.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock Game
     </h1>
@@ -42,7 +42,7 @@
      <!-- Design game area -->
 
     <div class="game-area">
-        
+
     <!-- Numbers of attempt before game ends -->
         <div class="movesleft">Moves Left: 10</div>
         <div class="move">Choose your move</div>
@@ -63,7 +63,7 @@
             <div id="playerScore">Score:</div>
             <div id="computerDisplay">Computer:</div>
             <div id="computerScore">Score:</div>
-            <div id="resultDisplay"></div>
+            <div id="resultDisplay">&nbsp;</div>
          
         <div class="result">Scores</div>
         <button class="reload">Reload</button>
