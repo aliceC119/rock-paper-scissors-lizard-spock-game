@@ -91,7 +91,7 @@ function playGame(playerChoice){
 }
 
 function endGame() {
-    //just an example
+    
     let winner = "It's a Tie Game";
     if (playerScore > computerScore) {
         winner =  "The winner is " + "You";
