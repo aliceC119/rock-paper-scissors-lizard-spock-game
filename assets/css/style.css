@@ -114,6 +114,18 @@ img.spock{
     margin: 20px 0;  
 
 }
+.score-area button {
+    background-color: rgb(158, 90, 221);
+    width: 20%;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    color:azure;
+    font-weight: bold;
+    border-color: aliceblue;
+    
+    
+}
 
 /* Footer */
 
