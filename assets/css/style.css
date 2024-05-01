@@ -15,16 +15,34 @@ img.logo{
     max-width: 40%;
     max-height: 50%;
     display: relative;
-    float: left;
+    float: right;
 }
 .heading{
     font-size: 2rem;
-    color: gray;
+    color: rgb(145, 47, 156);
     position: flex;
     width:80%;
-    text-align: center;
+    text-align: left;
     display: relative;
-    margin-bottom: 30px;
+    margin-left: 10px;
+}
+/* Add style to Rules of Game */
+
+.rules,.win{
+    color:orange;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+h2 {
+    color:gray;
+    position: flex;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 10px;
 }
 /* Add style to the player and computer choices */
 
@@ -39,20 +57,22 @@ img.logo{
     max-width: 60%;
     max-height: 60%;
     padding: 5px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .container {
     display: flex;
-    column-gap: 2px;
+    column-gap: 1px;
     margin-top: 1px;
     margin-left: 10%;
 }
 
-.text-box{
+.text-box h2{
     font-family: 'Courier New', Courier, monospace;
     color:brown;
     display: relative;
-    margin-left: 15%;
+    margin-left: 5px;
+    font-size: 1rem;
+    
 }
 /* Add style to move left area */
 
@@ -114,16 +134,19 @@ img.spock{
     margin: 10px 1;
     align-items: center;
     margin-top: 1%;
+    margin-left: 5px;
 }
 #resultDisplay {
     font-size: 2rem;
     color: red;
     margin: 20px 0;
+    margin-left: 5px;
 }
 #playerScore, #computerScore {
     font-size: 2rem;
     color:green;
-    margin: 10px 1;  
+    margin: 10px 1; 
+    margin-left: 5px; 
 }
 /* Add style to reset button */
 
@@ -136,6 +159,7 @@ img.spock{
     color:azure;
     font-weight: bold;
     border-color: aliceblue; 
+    margin-left: 5px;
 }
 
 /* Footer */
@@ -149,6 +173,14 @@ footer h2 {
 /* Media query: tablets and larger , 768px and up) */
 @media screen and (min-width: 768px) {
 
+.rules, .win{
+    font-size:1.2rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
 #player-choice {
     margin-left: 70px;
 }
@@ -156,9 +188,9 @@ footer h2 {
     margin-left: 70px;
 }
 
-.text-box {
-    font-size: 20px;
-    margin-left: 5%;
+.text-box h2{
+    font-size: 30px;
+    margin-left: 5px;
     margin-bottom: 10%;
 }
 .movesleft, .move {
@@ -184,8 +216,8 @@ footer h2 {
 }
 } 
 
-/* Media query: tablets and larger , 768px and up) */
-@media screen and (min-width: 768px){
+/* Media query: tablets and larger , 912px and up) */
+@media screen and (min-width: 912px){
 
     .heading {
         font-size: 4rem;
@@ -194,6 +226,10 @@ footer h2 {
     }
     img.logo {
         width: 30%;
+    }
+
+    h2{
+        font-size:1.5rem;
     }
     .text-box {
         font-size: 25px;
@@ -213,7 +249,7 @@ footer h2 {
         font-size: 2.3rem;
     }
     .score-area button {
-        width: 30%;
+        width: 50%;
         font-size: 1.3rem;
     }
 }
@@ -245,13 +281,16 @@ footer h2 {
         min-width: 50vh;
     }
     img.logo {
-        width: 15%;
+        width: 20%;
     }
     .heading {
-        font-size: 8rem;
+        font-size: 6rem;
         width: 90%;
-        margin-bottom: 5px;
+        height: 20%;
+      
     }
+  
+    
     .container {
         display: flex;
         column-gap: 70%;
