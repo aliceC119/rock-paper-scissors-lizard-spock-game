@@ -7,7 +7,6 @@ const computerScoreDisplay = document.getElementById("computerScore");
 const movesLeft = document.querySelector('.movesleft');
 const imagePath = "assets/images/";
 const numOfTurn = 10;
-
 let playerScore = 0;
 let computerScore = 0;
 let moves = 10;
@@ -21,8 +20,7 @@ function playTurn(playerChoice, computerChoice) {
 /* When playerChoice and computerChoice are the same, then both sides scored 0 */
 
     if(playerChoice === computerChoice){
-        resultInt = 0;
-        
+        resultInt = 0;   
     }
 /*  Otherwise the chosen choice beats the relative two choices */
 
@@ -42,11 +40,9 @@ function playTurn(playerChoice, computerChoice) {
                 break; 
             case "spock":
                 resultInt = (computerChoice === "scissors"|| computerChoice ==="rock") ? 1 : -1;
-                break;  
-                  
+                break;                   
         }
     }
-
     return resultInt;
 }
 
@@ -79,6 +75,8 @@ function playGame(playerChoice){
     computerScoreDisplay.textContent = "Score: " + computerScore.toString();
     resultDisplay.textContent = result;
 
+    /* Set the logic of moves left */
+
     moves++;
     movesLeft.innerText = `Moves Left: ${numOfTurn - moves}`;
     
@@ -86,9 +84,8 @@ function playGame(playerChoice){
         
         endGame();
     }
-
-    
 }
+/* Set the logic for the winner */
 
 function endGame() {
     

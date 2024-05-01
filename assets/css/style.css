@@ -7,47 +7,15 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100%;
-    min-width: 100%;
-    
+    min-width: 100%; 
 }
-#player-choice{
-    max-width: 60%;
-    max-height: 60%; 
-    padding: 5px;
-    margin-left: 10px;
-    
-}
-
-#computer-choice{
-    max-width: 60%;
-    max-height: 60%;
-    padding: 5px;
-    margin-left: 10px;
-    
-}
-.container {
-    display: flex;
-    column-gap: 2px;
-    margin-top: 1px;
-    margin-left: 10%;
-
-}
-
-.text-box{
-    font-family: 'Courier New', Courier, monospace;
-    color:brown;
-    display: relative;
-    margin-left: 15%;
-  
-}
+/* Area to show a picture of the game and the title of this game */
 
 img.logo{
     max-width: 40%;
     max-height: 50%;
-    
     display: relative;
     float: left;
-   
 }
 .heading{
     font-size: 2rem;
@@ -57,8 +25,37 @@ img.logo{
     text-align: center;
     display: relative;
     margin-bottom: 30px;
-    
 }
+/* Add style to the player and computer choices */
+
+#player-choice{
+    max-width: 60%;
+    max-height: 60%; 
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#computer-choice{
+    max-width: 60%;
+    max-height: 60%;
+    padding: 5px;
+    margin-left: 10px;
+}
+.container {
+    display: flex;
+    column-gap: 2px;
+    margin-top: 1px;
+    margin-left: 10%;
+}
+
+.text-box{
+    font-family: 'Courier New', Courier, monospace;
+    color:brown;
+    display: relative;
+    margin-left: 15%;
+}
+/* Add style to move left area */
+
 .movesleft, .move {
     font-family: "Jersey 15", sans-serif;
     font-size:1.5rem;
@@ -66,11 +63,11 @@ img.logo{
     text-align: center;
     display: relative;
     margin-bottom: 2%;
-
 }
+/* Add style to buttons of all 5 choices */
+
 .choices{
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 .choices button{
     font-size :1rem;
@@ -80,14 +77,14 @@ img.logo{
     background-color: #fff6d5;
     transition: background-color 0.5s ease;
     display: relative;
-    margin-left: 20px;
-    
+    margin-left: 20px;   
 }
+/* style to make change of color when the chosen buttton is being clicked */
 
 .choices button:hover{
     background-color: rgb(167, 230, 238);
 }
-
+/* Add styles to the image of 5 choices */
 
 img.rock{
     width: 30%;
@@ -109,6 +106,7 @@ img.spock{
     width: 30%;
     height: 20%;
 }
+/* Add style to the player, computer and result displays */
 
 #playerDisplay, #computerDisplay{
     font-size: 2rem;
@@ -126,8 +124,9 @@ img.spock{
     font-size: 2rem;
     color:green;
     margin: 10px 1;  
-
 }
+/* Add style to reset button */
+
 .score-area button {
     background-color: rgb(158, 90, 221);
     width: 30%;
@@ -136,8 +135,7 @@ img.spock{
     border-radius: 10px;
     color:azure;
     font-weight: bold;
-    border-color: aliceblue;
-    
+    border-color: aliceblue; 
 }
 
 /* Footer */
@@ -146,29 +144,24 @@ footer h2 {
     color: gray;
     display: relative;
     text-align: center;
-  
 }
 
 /* Media query: tablets and larger , 768px and up) */
 @media screen and (min-width: 768px) {
 
 #player-choice {
-
     margin-left: 70px;
 }
 #computer-choice {
-
     margin-left: 70px;
 }
 
 .text-box {
-
     font-size: 20px;
     margin-left: 5%;
     margin-bottom: 10%;
 }
 .movesleft, .move {
-
     font-size: 2rem;
     margin-bottom: 1px;
 }
@@ -179,12 +172,10 @@ footer h2 {
 }
 
 #playerDisplay, #computerDisplay{
-
     font-size: 2.5rem;
 }
 
 #playerScore, #computerScore{
-
     font-size: 2.5rem;
 }
 .score-area button {
@@ -206,20 +197,17 @@ footer h2 {
     }
     .text-box {
         font-size: 25px;
-        margin-left: 2%;
-        
+        margin-left: 2%;   
     }
     .movesleft, .move {
         font-size: 2.5rem;
     }
     .choices button {
         margin-left: 90px;
-        align-items: relative;      
-       
+        align-items: relative;         
     }
     #playerDisplay, #computerDisplay {
         font-size: 2.3rem;
-
     }
     #playerScore, #computerScore{
         font-size: 2.3rem;
@@ -248,7 +236,6 @@ footer h2 {
         width: 40%;
         font-size: 1.5rem;
     }
-
 }
 /* Media query: tablets and larger , 1920px and up) */
 @media screen and (min-width: 1920px){
@@ -256,7 +243,6 @@ footer h2 {
     body{
         min-height: 50vh;
         min-width: 50vh;
-
     }
     img.logo {
         width: 15%;
@@ -272,37 +258,32 @@ footer h2 {
         margin-top: 1px;
         margin-right: 30%;
         align-items: center;
-    
     }
  
     #player-choice{
         max-width: 300%;
         max-height: 300%;
-        padding: 50px;
-       
+        padding: 50px;  
     }
     #computer-choice{
         max-width: 300%;
         max-height: 300%;
         padding: 50px;    
-
     }
     
     .choices button{
         
         align-items: center;
         justify-content: flex-end;
-        width: 15%;
-        
+        width: 15%;   
     }
     .text-box {
         font-size: 200%;
         margin-left: 50%;
         margin-bottom: 10%;
-        width: 250%;
-        
-    }
-    
+        width: 250%;   
+    } 
+
     #playerDisplay, #computerDisplay{
         font-size: 3rem;
         align-items: center;
@@ -317,6 +298,4 @@ footer h2 {
         width: 30%;
         font-size: 1.5rem;
     }
-    
-
 }
