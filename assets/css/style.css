@@ -99,7 +99,7 @@ h2 {
 /* style to make change of color when the chosen buttton is being clicked */
 
 .choices button:hover{
-    background-color: rgb(167, 230, 238);
+    background-color: #d5e5ff;
 }
 /* Add styles to the image of 5 choices */
 
@@ -202,7 +202,7 @@ h2{
     font-size: 2.5rem;
 }
 .score-area button {
-    width: 25%;
+    
     font-size: 1.3rem;
 }
 } 
@@ -237,8 +237,7 @@ h2{
 #playerScore, #computerScore{
     font-size: 2.3rem;
 }
-.score-area button {
-    width: 30%;
+.score-area button {  
     font-size: 1.3rem;
 }
 }
@@ -261,13 +260,11 @@ h2{
     font-size: 2.5rem;
 }
 .score-area button{
-    width: 30%;
     font-size: 1.5rem;
 }
 }
 /* Media query: tablets and larger , 1920px and up) */
 @media screen and (min-width: 1920px){
-
 
 img.logo {
     width: 15%;
