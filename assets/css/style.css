@@ -14,16 +14,16 @@ body {
 img.logo{
     max-width: 40%;
     max-height: 50%;
-    display: relative;
+    display:flex;
     float: right;
 }
 .heading{
     font-size: 2rem;
     color: rgb(145, 47, 156);
-    position: flex;
+    position:relative;
     width:80%;
     text-align: left;
-    display: relative;
+    display:block;
     margin-left: 10px;
 }
 /* Add style to Rules of Game */
@@ -37,7 +37,7 @@ img.logo{
 }
 h2 {
     color:gray;
-    position: flex;
+    position:relative;
     text-align: left;
     width: 90%;
     font-size: 1rem;
@@ -67,7 +67,6 @@ h2 {
 .text-box h2{
     font-family: 'Courier New', Courier, monospace;
     color:brown;
-    display: relative;
     margin-left: 5px;
     font-size: 1rem;
 }
@@ -78,7 +77,7 @@ h2 {
     font-size:1.5rem;
     color: gray;
     text-align: center;
-    display: relative;
+    display:block;
     margin-bottom: 2%;
 }
 /* Add style to buttons of all 5 choices */
@@ -88,14 +87,14 @@ h2 {
 }
 .choices button{
     font-size :1rem;
-    margin: 2 100px;
+    margin-top: 3%;
     width: 120px;
     height:110px;
     border-radius: 20%;
     background-color: #fff6d5;
     transition: background-color 0.5s ease;
-    display: relative;
-    margin-left: 45px;   
+    display:inline-flex;
+    margin-left: 43px;   
 }
 /* style to make change of color when the chosen buttton is being clicked */
 
@@ -125,7 +124,7 @@ img.spock{
 #playerDisplay, #computerDisplay{
     font-size: 2rem;
     color:rgb(135, 133, 237);
-    margin: 10px 1;
+    margin: 10px;
     align-items: center;
     margin-top: 1%;
     margin-left: 5px;
@@ -133,20 +132,20 @@ img.spock{
 #resultDisplay {
     font-size: 2rem;
     color: red;
-    margin: 20px 0;
+    margin: 20px;
     margin-left: 5px;
 }
 #playerScore, #computerScore {
     font-size: 2rem;
     color:green;
-    margin: 10px 1; 
+    margin: 10px; 
     margin-left: 5px; 
 }
 /* Add style to reset button */
 
 .score-area button {
     background-color: rgb(158, 90, 221);
-    width: 30%;
+    width: 25%;
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
@@ -160,7 +159,6 @@ img.spock{
 
 footer h2 {
     color: gray;
-    display: relative;
     text-align: center;
 }
 
@@ -204,7 +202,7 @@ h2{
     font-size: 2.5rem;
 }
 .score-area button {
-    width: 30%;
+    width: 25%;
     font-size: 1.3rem;
 }
 } 
@@ -240,7 +238,7 @@ h2{
     font-size: 2.3rem;
 }
 .score-area button {
-    width: 50%;
+    width: 30%;
     font-size: 1.3rem;
 }
 }
@@ -263,7 +261,7 @@ h2{
     font-size: 2.5rem;
 }
 .score-area button{
-    width: 40%;
+    width: 30%;
     font-size: 1.5rem;
 }
 }
