@@ -145,7 +145,7 @@ img.spock{
 
 .score-area button {
     background-color: rgb(158, 90, 221);
-    width: 25%;
+    width: 30%;
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
@@ -268,10 +268,7 @@ h2{
 /* Media query: tablets and larger , 1920px and up) */
 @media screen and (min-width: 1920px){
 
-body{
-    min-height: 80vh;
-    min-width: 80vh;
-}
+
 img.logo {
     width: 15%;
 }
