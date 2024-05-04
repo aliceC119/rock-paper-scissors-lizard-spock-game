@@ -6,7 +6,8 @@
 # Features
 
 **The Rock Paper Scissors Lizard Spock Game Logo and Heading**
-  - Located at the top of the page. The logo and heading are easy for users to see. The logo also gives users a quick idea of how to win the game. Below this are the rules of the game and a description of how to win the game.
+  - Located at the top of the page. The logo and heading are easy for users to see. The logo also gives users a quick idea of how to win the game. Below this are the rules of the game and a description of how to win the game. This is to help the user understand how the game works.
+<img width="1038" alt="Screenshot 2024-05-04 at 16 49 27" src="https://github.com/aliceC119/rock-paper-scissors-lizard-spock-game/assets/162838985/2895be62-370b-459b-8af3-d518774d06cb">
 
 **The Game Area**
   - This section allows the user to play the game.
@@ -71,7 +72,7 @@ Depending on the outcome of the game, 3 results will be displayed: "The Winner i
   + The codes that respond to the 'Choices' and 'Moves Left' displays are inspired by https://www.geeksforgeeks.org/html-dom-style-display-propert
 
   # Content
-  + The Rules of the game were taken from https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
+  + The text of the Rules of the game is taken from https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
     
 
   # Media
