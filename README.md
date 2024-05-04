@@ -65,11 +65,11 @@ Depending on the outcome of the game, 3 results will be displayed: "The Winner i
   The live link can be found here - https://alicec119.github.io/rock-paper-scissors-lizard-spock-game/
    
   # Credits
-  + The code to create the favicon was taken by the Love Running Project.
-  + The idea of linking the selected choice of move images to the display images was inspired by https://www.youtube.com/watch?v=fIBOydve2f8
-  + The idea for setting up the game logic was inspired by https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=441s
+  + The code to create the favicon is taken by the Love Running Project.
+  + The codes of linking the selected choice of move images to the display images are inspired by https://www.youtube.com/watch?v=fIBOydve2f8
+  + The codes for setting up the game logic are inspired by https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=441s
   + The code to create a responsive effect on the choice buttons is taken from https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=441s
-  + The code to set the computer's random selection was inspired by and taken from the Love Maths Project.
+  + The codes to set the computer's random selection were inspired by and taken from the Love Maths Project.
   + The codes for the Moves Left function are inspired by and taken from https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
   + The codes that respond to the 'Choices' and 'Moves Left' displays are inspired by https://www.geeksforgeeks.org/html-dom-style-display-propert
 
