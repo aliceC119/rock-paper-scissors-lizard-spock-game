@@ -17,7 +17,7 @@ let meetEndGameCondition = false;
 function playTurn(playerChoice, computerChoice) {
     let resultInt = 0;
 
-/* When playerChoice and computerChoice are the same, then both sides scored 0 */
+/* When playerChoice and computerChoice are the same, then both sides gained 0 point */
 
     if(playerChoice === computerChoice){
         resultInt = 0;   
@@ -46,7 +46,8 @@ function playTurn(playerChoice, computerChoice) {
     return resultInt;
 }
 
-/*  Set the computer choose randomly within the 5 choices */
+/*  Allow the player and the computer to play the game, 
+the computer can choose randomly within the 5 choices */
 
 function playGame(playerChoice){
     let computerChoice = choices[Math.floor(Math.random()* 5)];
@@ -58,7 +59,7 @@ function playGame(playerChoice){
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;  
 
-/* Different results will be showed if the result conditions are met */
+/* Different results and point will be showed and added if the result conditions are met */
 
     let resultInt = playTurn(playerChoice, computerChoice);
     let result = "";
@@ -75,7 +76,8 @@ function playGame(playerChoice){
     computerScoreDisplay.textContent = "Score: " + computerScore.toString();
     resultDisplay.textContent = result;
 
-    /* Set the logic of moves left */
+    /* Set the logic of moves left,
+    the number of moves will be deducted after each click */
 
     moves++;
     movesLeft.innerText = `Moves Left: ${numOfTurn - moves}`;
@@ -100,7 +102,7 @@ function endGame() {
     document.querySelector('.choices').style.display = 'none';
     document.querySelector('.move').style.display = 'none';
 }
-/* Each game has 10 moves, 1 move is subtracted after each move.*/
+/* Display the calculation of Moves left when the choice button is being clicked */
 
 function clearDisplay(){
     playerScore = 0;
