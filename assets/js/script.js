@@ -99,10 +99,13 @@ function endGame() {
     }
     resultDisplay.textContent = winner;
 
+/* Set the display page to the result page once the 10 moves are up. */
+
     document.querySelector('.choices').style.display = 'none';
     document.querySelector('.move').style.display = 'none';
 }
-/* Display the calculation of Moves left when the choice button is being clicked */
+/* Display the calculation of Moves Left when the choice button is being clicked,
+and return to the choice display page after the reset button is being clicked. */
 
 function clearDisplay(){
     playerScore = 0;
