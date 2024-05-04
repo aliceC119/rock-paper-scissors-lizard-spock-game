@@ -78,7 +78,7 @@ Depending on the outcome of the game, 3 results will be displayed: "The Winner i
     
 
   # Media
-  + The favicon logo was taken from https://www.vecteezy.com/png/28556811-victory-hand-icon-emoji-sticker
-  + The heading icon was taken from https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
-  + The five hands gestures images were taken from https://www.freepik.com/free-vector/hand-drawn-emoji-hands-collection_45831480.htm#fromView=search&page=1&position=27&uuid=892f9b5e-c35b-46e2-b437-fe6f8f3f061a
+  + The favicon logo is taken from https://www.vecteezy.com/png/28556811-victory-hand-icon-emoji-sticker
+  + The heading icon is taken from https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
+  + The five hands gestures images are taken from https://www.freepik.com/free-vector/hand-drawn-emoji-hands-collection_45831480.htm#fromView=search&page=1&position=27&uuid=892f9b5e-c35b-46e2-b437-fe6f8f3f061a
   + The background removal website for images in this project is https://www.remove.bg/.
