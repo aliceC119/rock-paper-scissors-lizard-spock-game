@@ -1,5 +1,6 @@
 # Rock Paper Scissors Lizard Spock Game 
-<img width="978" alt="Screenshot 2024-05-02 at 14 46 27" src="https://github.com/aliceC119/rock-paper-scissors-lizard-spock-game/assets/162838985/f1ca6d14-3953-4686-82f8-f6cc8ef6d81a">
+<img width="863" alt="Screenshot 2024-05-04 at 12 37 00" src="https://github.com/aliceC119/rock-paper-scissors-lizard-spock-game/assets/162838985/4042cf46-1b76-40cf-bc73-40e33c3b42f9">
+
 + This game was created using HTML, CSS and Javascript. The site will attract the audience interested in the Rock Paper Scissors Lizard and Spock game. The user will play this game against the computer, this game is a fully responsive JavaScript game that enable users and the computer to choose from the 5 given options when playing the game. The results of the game are either win, lose or draw.
 
 # Features
